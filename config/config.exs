@@ -10,7 +10,7 @@ use Mix.Config
 
 # You can configure for your application as:
 #
-#     config :ecto_blog_samples, key: :value
+#    config :ecto_blog_samples, key: :value
 #
 # And access this configuration in your application as:
 #
@@ -32,3 +32,6 @@ config :ecto_blog_samples, Repo,
   adapter: Mongo.Ecto,
   database: "blog_samples", 
   hostname: "localhost"
+
+
+config :ecto_blog_samples, ecto_repos: [Repo]
